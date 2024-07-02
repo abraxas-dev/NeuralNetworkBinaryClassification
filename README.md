@@ -1,4 +1,4 @@
-# Neuronal Network (4 Layers) for Binary Classification (with cats)
+# Neuronal Network for Binary Classification
 It's a learning project
 
 ## Project Overview 
