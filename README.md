@@ -4,7 +4,7 @@ This repository contains a neural network project for binary classification impl
 ## Project Overview 
 
 ### Note
-- I achieved 100% accuracy on the training dataset and 82% on the test dataset using a learning rate of 0.05 and 500 iterations. Additionally, the neural network correctly classified each provided picture.
+- I achieved 100% accuracy on the training dataset and 82% on the test dataset using a learning rate of **0.05** and **500** iterations. Additionally, the neural network correctly classified each provided picture.
 - Use the provided cat0 dataset and images for experimentation. Please note that this dataset is very small, which may lead to overfitting.
 - To modify the number of layers/neurons, adjust dims section in the code. Ensure that the number of neurons in the first layer matches the input dimensions of your dataset images.
 - To modify the dataset, ensure your dataset is saved in the /datasets/ directory with the .h5 extension.
