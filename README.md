@@ -1,5 +1,5 @@
 # Neural Network for Binary Classification
-This repository contains a neural network project for binary classification implemented from scratch using Python. The primary purpose of this project was to deepen understanding of neural networks and their application in binary classification. The program includes an interactive prompt window in the terminal that prompts the user for various settings and information required for program execution.
+This repository contains a neural network project for binary classification implemented from scratch using Python as an exercise for the Deep Learning Specialisation course. The primary purpose of this project was to deepen understanding of neural networks and their application in binary classification. The program includes an interactive window in the terminal that prompts the user for various settings and information required for program execution.
 
 ## Project Overview 
 
@@ -34,3 +34,10 @@ pip3 install -r requirements.txt
 ```
 python3 model.py
 ```
+
+### Example output with the provided dataset and images
+
+<p align="center">
+  <img src="example%20output/nn-image1.png" width="600" />
+  <img src="example%20output/nn-image2.png" width="600" />
+</p>
