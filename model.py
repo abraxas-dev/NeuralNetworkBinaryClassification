@@ -248,9 +248,9 @@ def predict(X, Y, parameters, image):
     if image:
         answer = int(np.squeeze(p))
         if answer == 1:
-            print("\nThe neuronal network says : It's a cat !")
+            print("\nThe neural network says : It's a cat !")
         else:
-            print("\nThe neuronal network says : It's not a cat !")
+            print("\nThe neural network says : It's not a cat !")
 
     else :
         print("Accuracy - {:.2f}%\n".format(accuracy))
@@ -269,8 +269,8 @@ def predict_image(path, label_y, parameters, num_px):
 if __name__ == '__main__':
 
     print('-' * 80 + "\n\n")
-    name_train = input("Enter the train dataset with the file extension (.h5) : \n")
-    name_test = input("\nEnter the test dataset name with the file extension (.5) : \n")
+    name_train = input("Enter the train dataset name with the file extension (.h5) : \n")
+    name_test = input("\nEnter the test dataset name with the file extension (.h5) : \n")
     print("\n\n" + '-' * 80)
 
     print('-' * 80 + "\n\n" + "Loading data..." + "\n\n" + '-' * 80)
@@ -282,9 +282,9 @@ if __name__ == '__main__':
     dims = [12288, 256, 64, 16, 1]
     while(True):
         print('-' * 80 + "\n\n")
-        print_cost = input("Do you want to see the costs ? Enter yes or no\n").strip().lower() == 'yes'
+        print_cost = input("Do you want to see the costs ? Enter Yes or No\n").strip().lower() == 'yes'
         learning_rate = float(input("\nEnter the learning rate\n"))
-        iterations = int(input("\nEnter the number of interations\n"))
+        iterations = int(input("\nEnter the number of the interations\n"))
         if not print_cost:
             print("\nTraining the model...\n")
         else:
@@ -297,18 +297,18 @@ if __name__ == '__main__':
         predictions_train = predict(train_x, train_y, parameters, False)
         print("Test Dataset")
         predictions_test = predict(test_x, test_y, parameters, False)
-        repeat_params = input("Do you want to change the parameters? Enter yes or no\n").strip().lower() == 'yes'
+        repeat_params = input("Do you want to change the parameters? Enter Yes or No\n").strip().lower() == 'yes'
         print('-' * 80)
         if not repeat_params:
             break
 
     while(True):
         print('-' * 80 + "\n\n")
-        question = input("Do you want to see what the model predict for your image ? Enter yes or no\n").strip().lower() == 'yes'
+        question = input("Want to see what the model predicts for your image ? Enter Yes or No\n").strip().lower() == 'yes'
         if not question:
             print("\n\n" + '-' * 80)
             break
         image = input("\nEnter the image name with the file extension : \n")
-        label_y = [int(input("\nEnter 1 for true or 0 for false as label : \n"))]
+        label_y = [int(input("\nEnter 1 for true (cat) or 0 for false (not cat) as label : \n"))]
         predict_image("images/" + str(image), label_y, parameters, num_px)
         print("\n\n" + '-' * 80)
